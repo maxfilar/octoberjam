@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_check_existing_of_gun",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_check_existing_of_gun",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
