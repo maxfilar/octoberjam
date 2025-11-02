@@ -1,7 +1,7 @@
 
 
 if (room == r_arena) {
-	if keyboard_check_released(ord("P")) {
+	if keyboard_check_released(ord("P")) and !instance_exists(o_buff) {
 		global.pause = !global.pause
 	}
 

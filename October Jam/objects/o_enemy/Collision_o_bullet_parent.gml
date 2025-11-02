@@ -5,5 +5,6 @@ if other.creator == o_player {
 	if hp <= 0 {
 		instance_destroy(self)
 		instance_destroy(enemy_gun)
+		global.player_setup.xp ++
 	}
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_buff_shield",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_buff_shield",
+  "parent":{
+    "name":"buffs",
+    "path":"folders/Scripts/buffs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
