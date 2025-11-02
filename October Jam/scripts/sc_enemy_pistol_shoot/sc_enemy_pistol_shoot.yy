@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_enemy_pistol_shoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_enemy_pistol_shoot",
+  "parent":{
+    "name":"enemy_shoot_types",
+    "path":"folders/Scripts/enemy_shoot_types.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

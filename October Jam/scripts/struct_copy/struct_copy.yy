@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"sc_pistol_shoot",
+  "%Name":"struct_copy",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"sc_pistol_shoot",
+  "name":"struct_copy",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

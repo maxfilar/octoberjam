@@ -20,12 +20,7 @@ if creator != noone {
 		image_angle = ang
 		
 		if !time_to_fire {
-			var _blt = instance_create_layer(_x,_y,"Instances",o_bullet)
-			with _blt {
-				direction = other.ang
-				image_angle = other.ang
-				creator = other
-			}
+			script_execute(my_gun.shoot_type_enemy)
 			randomize()
 			time_to_fire = my_gun.rate_of_fire * 3 + irandom_range(-my_gun.rate_of_fire * 1.5, my_gun.rate_of_fire * 1.5)
 		}

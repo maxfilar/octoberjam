@@ -1,6 +1,6 @@
 // Ресурсы скриптов были изменены для версии 2.3.0, подробности см. по адресу
 // https://help.yoyogames.com/hc/en-us/articles/360005277377
-function sc_pistol_shoot(){
+function sc_player_pistol_shoot(){
 	var _x = target.x + target.sprite_width / 2
 	var _y = target.y + target.sprite_height / 2
 	

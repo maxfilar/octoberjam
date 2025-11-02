@@ -26,9 +26,8 @@ if target != noone {
 	
 	if global.player_setup.cur_gun != noone {
 		sprite_index = global.player_setup.cur_gun.sprite
-	
-		if keyboard_check_released(vk_space) and !time_to_fire and global.player_setup.cur_gun.ammo {
-			script_execute(global.player_setup.cur_gun.shoot_type)
+		if keyboard_check(vk_space) and !time_to_fire and global.player_setup.cur_gun.ammo {
+			script_execute(global.player_setup.cur_gun.shoot_type_player)
 		}
 	}
 	

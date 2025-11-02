@@ -1,5 +1,6 @@
 randomize()
-my_gun = global.guns[irandom(array_length(global.guns)-1)]
+var gun_template = global.enemy_guns[irandom(array_length(global.enemy_guns) - 1)]
+my_gun = struct_copy(gun_template)
 creator = noone
 target = noone
-time_to_fire = 60
+time_to_fire = 120
