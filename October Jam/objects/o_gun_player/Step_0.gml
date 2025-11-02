@@ -1,3 +1,6 @@
+if global.pause { image_speed = 0; exit }
+image_speed = 1
+
 target = instance_exists(o_player) ? o_player : noone
 
 if target != noone {
@@ -8,9 +11,13 @@ if target != noone {
 	
 	var _nearest = instance_nearest(x, y, o_enemy)
 	if instance_exists(_nearest) {
-		var _tar_x = _nearest.x+_nearest.sprite_width / 2
-		var _tar_y = _nearest.y+_nearest.sprite_height / 2
-		ang = point_direction(x, y, _tar_x, _tar_y)
+		var _dist = distance_to_object(_nearest)
+		
+		if _dist < o_camera.camera_width / 2 {
+			var _tar_x = _nearest.x+_nearest.sprite_width / 2
+			var _tar_y = _nearest.y+_nearest.sprite_height / 2
+			ang = point_direction(x, y, _tar_x, _tar_y)
+		}
 	} else {
 		ang = image_angle
 	}

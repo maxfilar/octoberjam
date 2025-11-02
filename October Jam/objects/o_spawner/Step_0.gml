@@ -1,3 +1,6 @@
+if global.pause { image_speed = 0; exit }
+image_speed = 1
+
 spawn_timer -= 1
 
 if (spawn_timer <= 0) {

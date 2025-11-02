@@ -3,10 +3,10 @@ if selected {
 	draw_sprite(s_gun_unlock_selected,0,x,y)
 }
 if my_weapon != noone {
-	var _x = x + sprite_get_width(my_weapon.sprite) / 2
+	var _x = x + 64
 	var _y = y + 32
 	
-	draw_sprite(my_weapon.sprite,0,_x,_y)
+	draw_sprite(my_weapon.sprite_icon,0,_x,_y)
 	draw_set_halign(fa_center)
 	draw_text(x+64,y+48,my_weapon.name)
 	

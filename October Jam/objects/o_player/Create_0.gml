@@ -12,3 +12,4 @@ for (var i = 0; i < array_length(global.guns); i++) {
 }
 
 copied_guns = []
+invincible = 0

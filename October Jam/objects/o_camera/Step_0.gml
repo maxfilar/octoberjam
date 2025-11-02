@@ -1,3 +1,5 @@
+if global.pause { exit }
+
 x_next = tracked_object.x
 y_next = tracked_object.y
 
