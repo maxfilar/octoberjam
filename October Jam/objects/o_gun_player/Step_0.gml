@@ -11,6 +11,10 @@ if target != noone {
 	
 	var _nearest = instance_nearest(x, y, o_enemy)
 	if instance_exists(_nearest) {
+		o_selected.x = _nearest.x + 16
+		o_selected.y = _nearest.y + 16
+		o_selected.visible = true
+		
 		var _dist = distance_to_object(_nearest)
 		
 		if _dist < o_camera.camera_width / 2 {
@@ -20,6 +24,7 @@ if target != noone {
 		}
 	} else {
 		ang = image_angle
+		o_selected.visible = false
 	}
 	
 	direction = ang

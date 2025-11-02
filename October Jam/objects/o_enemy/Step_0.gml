@@ -20,3 +20,6 @@ if target != noone {
 		y += yspd
 	}
 }
+
+if invincible > 0 
+	invincible --

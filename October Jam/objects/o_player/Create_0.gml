@@ -1,7 +1,7 @@
 global.player_setup = {
 	max_hp: 100,
 	hp: 100,
-	spd: 5,
+	spd: 3,
 	cur_gun: noone,
 	shield: 0,
 	lvl: 1,

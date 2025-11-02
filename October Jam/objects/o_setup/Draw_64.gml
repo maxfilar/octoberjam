@@ -20,4 +20,14 @@ if !instance_exists(o_transition) {
 		0,
 		0,
 	)
+	
+	if room == r_guns {
+		var _w = window_get_width()
+		var _h = window_get_height()
+		draw_set_colour(c_white)
+		draw_set_halign(fa_center)
+		draw_set_font(f_main_8)
+		draw_text_ext(_w*0.5,_h*0.9,"Collect copies of weapons to open them for selection before the start",16,_w*0.9)
+	}
 }
+
