@@ -10,7 +10,12 @@ function sc_player_pistol_shoot(){
 		image_angle = direction
 		creator = o_player
 	}
-			
+	
+	sc_screen_shake(
+		global.player_setup.cur_gun.shake[0],
+		global.player_setup.cur_gun.shake[1],
+		global.player_setup.cur_gun.shake[2],
+	)
 	time_to_fire = global.player_setup.cur_gun.rate_of_fire
 	global.player_setup.cur_gun.ammo --
 }

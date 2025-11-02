@@ -25,3 +25,8 @@ if (cam_x <= 0 || cam_x + camera_width >= map_width) {
 } else {
 	camera_at_border_x = false;
 }
+
+with (o_ui_parent) {
+    update_position();
+}
+

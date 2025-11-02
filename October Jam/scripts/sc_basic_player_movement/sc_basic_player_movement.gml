@@ -12,6 +12,17 @@ function sc_basic_player_movement(){
 	xspd = dir_x * global.player_setup.spd
 	yspd = dir_y * global.player_setup.spd
 
+	if place_meeting(x+xspd,y,o_wall) 
+		xspd = 0
+	if place_meeting(x,y+yspd,o_wall) 
+		yspd = 0
+
 	x += xspd
 	y += yspd
+	
+	if xspd == 0 && yspd == 0 {
+		sprite_index = s_player_walk
+	} else {
+		sprite_index = s_player
+	}
 }

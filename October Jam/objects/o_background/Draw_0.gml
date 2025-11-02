@@ -1,0 +1,1 @@
+draw_sprite_tiled_ext(s_background,image_index,x,y,1,1,cur_color,1)
