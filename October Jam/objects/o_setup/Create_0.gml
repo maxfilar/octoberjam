@@ -12,7 +12,7 @@ function Gun(_name,_sprite_game,_sprite_icon,_dmg,_rof,_ammo,_player_shoot,_enem
 	shoot_type_player = _player_shoot
 	shoot_type_enemy = _enemy_shoot
 	copies_to_unlock = _copies
-	copies_collected = 0
+	copies_collected = _copies
 	selected = false
 	shake = _shake
 }
@@ -53,13 +53,25 @@ global.guns = [
 		s_pistol,s_pistol_icon,
 		5,20,8,
 		sc_player_pistol_shoot,sc_enemy_pistol_shoot,
-		8, [10,10,1]
+		10, [10,10,1]
 	),
 	new Gun("Double Pistol",
 		s_double_pistol,s_double_pistol_icon,
 		5,20,16,
 		sc_player_double_pistol_shoot,sc_enemy_double_pistol_shoot,
-		8, [10,10,1]
+		10, [10,10,1]
+	),
+	new Gun("Assault Riffle",
+		s_assault_riffle,s_assault_riffle_icon,
+		2,5,30,
+		sc_player_ar_shoot,sc_enemy_ar_shoot,
+		30, [5,5,1]
+	),
+	new Gun("Shotgun",
+		s_shotgun,s_shotgun_icon,
+		4,50,6,
+		sc_player_shotgun_shoot,sc_enemy_shotgun_shoot,
+		16, [10,20,1]
 	),
 ]
 global.enemy_guns = []

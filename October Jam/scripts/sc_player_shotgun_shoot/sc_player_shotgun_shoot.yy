@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sc_player_shotgun_shoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sc_player_shotgun_shoot",
+  "parent":{
+    "name":"player_shoot_types",
+    "path":"folders/Scripts/player_shoot_types.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
