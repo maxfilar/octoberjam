@@ -24,25 +24,29 @@ function Buff(_name,_icon,__script) constructor {
 }
 
 global.buffs = [
-	new Buff("+5 MAXHP",s_hpplus,function() {sc_buff_hpplus(5)}),
 	new Buff("+10 MAXHP",s_hpplus,function() {sc_buff_hpplus(10)}),
-	new Buff("+20 MAXHP",s_hpplus,function() {sc_buff_hpplus(20)}),
+	new Buff("+25 MAXHP",s_hpplus,function() {sc_buff_hpplus(25)}),
+	new Buff("+50 MAXHP",s_hpplus,function() {sc_buff_hpplus(50)}),
 	
-	new Buff("+10% DMG",s_dmgplus,function() {sc_buff_dmg(0.1)}),
-	new Buff("+25% DMG",s_dmgplus,function() {sc_buff_dmg(0.1)}),
-	new Buff("+50% DMG",s_dmgplus,function() {sc_buff_dmg(0.1)}),
+	new Buff("+25% DMG",s_dmgplus,function() {sc_buff_dmg(0.25)}),
+	new Buff("+50% DMG",s_dmgplus,function() {sc_buff_dmg(0.50)}),
+	new Buff("+75% DMG",s_dmgplus,function() {sc_buff_dmg(0.75)}),
 	
 	new Buff("+1 SPD",s_spdplus,function() {sc_buff_spd(1)}),
 	new Buff("+2 SPD",s_spdplus,function() {sc_buff_spd(2)}),
 	new Buff("+3 SPD",s_spdplus,function() {sc_buff_spd(3)}),
 	
-	new Buff("+15 SHIELD",s_shieldplus,function() {sc_buff_shield(15)}),
-	new Buff("+30 SHIELD",s_shieldplus,function() {sc_buff_shield(30)}),
-	new Buff("+50 SHIELD",s_shieldplus,function() {sc_buff_shield(50)}),
+	new Buff("+20 SHIELD",s_shieldplus,function() {sc_buff_shield(20)}),
+	new Buff("+40 SHIELD",s_shieldplus,function() {sc_buff_shield(40)}),
+	new Buff("+60 SHIELD",s_shieldplus,function() {sc_buff_shield(60)}),
 	
+	new Buff("+AMMO X1",s_ammoplus,function() {sc_buff_ammo(1)}),
 	new Buff("+AMMO X2",s_ammoplus,function() {sc_buff_ammo(2)}),
 	new Buff("+AMMO X3",s_ammoplus,function() {sc_buff_ammo(3)}),
-	new Buff("+AMMO X5",s_ammoplus,function() {sc_buff_ammo(5)}),
+	
+	new Buff("SHOOT SPD +5%",s_shootspdplus,function() {sc_buff_shootspd(0.05)}),
+	new Buff("SHOOT SPD +15%",s_shootspdplus,function() {sc_buff_shootspd(0.15)}),
+	new Buff("SHOOT SPD +30%",s_shootspdplus,function() {sc_buff_shootspd(0.3)}),
 ]
 global.guns = [
 	new Gun("Pistol",

@@ -1,5 +1,3 @@
-
-
 if (room == r_arena) {
 	if keyboard_check_released(ord("P")) and !instance_exists(o_buff) {
 		global.pause = !global.pause
@@ -15,5 +13,11 @@ if (room == r_arena) {
 
 	if time_to_press >= time_to_leave {
 		room_transition(r_map)
+	}
+	
+	for (var i = 0; i < array_length(global.guns); i++) {
+		if global.guns[i].rate_of_fire < 1 {
+			global.guns[i].rate_of_fire = 1
+		}
 	}
 }

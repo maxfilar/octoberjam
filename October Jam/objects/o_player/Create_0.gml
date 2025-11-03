@@ -3,10 +3,10 @@ global.player_setup = {
 	hp: 100,
 	spd: 3,
 	cur_gun: noone,
-	shield: 0,
+	shield: 60,
 	lvl: 1,
 	xp: 0,
-	xp_next: 3,
+	xp_next: 10,
 }
 
 for (var i = 0; i < array_length(global.guns); i++) {

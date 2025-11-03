@@ -27,6 +27,9 @@ function sc_check_existing_of_gun(){
 		for (var i = 0; i < array_length(global.guns); i++) {
 			if global.guns[i].name == other.creator.my_gun.name {
 				global.player_setup.cur_gun = global.guns[i]
+				if global.player_setup.cur_gun.ammo == 0 {
+					global.player_setup.cur_gun.ammo += other.creator.my_gun.ammo
+				}
 				array_push(copied_guns,other.creator)
 				break
 			}
@@ -34,7 +37,7 @@ function sc_check_existing_of_gun(){
 	} else {
 		if !copy_exists { 
 			array_push(copied_guns,other.creator)
-			global.player_setup.cur_gun.ammo += other.creator.my_gun.ammo 
 		} 
+		global.player_setup.cur_gun.ammo += other.creator.my_gun.ammo 
 	}
 }

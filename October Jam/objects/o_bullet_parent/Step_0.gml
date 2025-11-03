@@ -7,4 +7,4 @@ yspd = lengthdir_y(blt_spd,direction)
 x += xspd
 y += yspd
 
-blt_spd = creator == o_player ? 15 : 8
+blt_spd = creator == o_player ? 15 : 5
