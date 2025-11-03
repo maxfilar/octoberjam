@@ -7,7 +7,7 @@ function sc_enemy_shotgun_shoot(){
 	repeat (5) {
 		var _blt = instance_create_layer(_x,_y,"Instances",o_bullet)
 		with _blt {
-			direction = other.ang + irandom_range(-60,60)
+			direction = other.ang + irandom_range(-10,10)
 			image_angle = direction
 			creator = other
 		}

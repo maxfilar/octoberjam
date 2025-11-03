@@ -4,8 +4,10 @@ if array_length(buff_list) > 0 {
 	
 	if key_back && cur_buff > 0 {
 		cur_buff --
+		audio_play_sound(sd_change,1,0)
 	} else if key_next && cur_buff < array_length(buff_list) - 1 {
 		cur_buff ++
+		audio_play_sound(sd_change,1,0)
 	}
 	
 	for (var i = 0; i < array_length(buff_list); i++) {
@@ -23,6 +25,7 @@ if array_length(buff_list) > 0 {
 	
 	if select_pressing >= select_time {
 		select_pressing = 0
+		audio_play_sound(sd_select,1,0)
 		with buff_list[cur_buff] {
 			script_execute(my_buff._script)
 			array_delete(o_buffs_setup.buff_list,0,array_length(o_buffs_setup.buff_list))

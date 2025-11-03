@@ -39,6 +39,7 @@ if target != noone {
 	if global.player_setup.cur_gun != noone {
 		sprite_index = global.player_setup.cur_gun.sprite
 		if keyboard_check(vk_space) and !time_to_fire and global.player_setup.cur_gun.ammo {
+			audio_play_sound(sd_shoot,1,0)
 			script_execute(global.player_setup.cur_gun.shoot_type_player)
 		}
 	}

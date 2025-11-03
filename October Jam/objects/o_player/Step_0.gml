@@ -8,3 +8,9 @@ if global.player_setup.xp == global.player_setup.xp_next {
 	global.player_setup.xp = 0
 	sc_level_up()
 }
+
+if global.player_setup.hp <= 0 {
+	audio_stop_sound(sd_arena)
+	audio_play_sound(sd_main_menu,1,1)
+	room_transition(r_map)
+}

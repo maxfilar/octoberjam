@@ -4,6 +4,7 @@ function sc_level_up(){
 	global.player_setup.lvl ++
 	global.player_setup.xp_next = round(global.player_setup.xp_next * 1.2)
 	global.pause = true
+	audio_play_sound(sd_lvlup,1,0)
 	
 	var _buff_list = []
 	for (var i = 0; i < array_length(global.buffs); i++) {

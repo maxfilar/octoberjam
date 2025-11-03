@@ -1,4 +1,5 @@
 gpu_set_tex_filter(false)
+audio_play_sound(sd_main_menu,1,1)
 
 function Gun(_name,_sprite_game,_sprite_icon,_dmg,_rof,_ammo,_player_shoot,_enemy_shoot,_copies,_shake) constructor {
 	name = _name
@@ -12,7 +13,7 @@ function Gun(_name,_sprite_game,_sprite_icon,_dmg,_rof,_ammo,_player_shoot,_enem
 	shoot_type_player = _player_shoot
 	shoot_type_enemy = _enemy_shoot
 	copies_to_unlock = _copies
-	copies_collected = _copies
+	copies_collected = 0
 	selected = false
 	shake = _shake
 }

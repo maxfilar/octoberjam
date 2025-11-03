@@ -12,6 +12,9 @@ if (room == r_arena) {
 	}
 
 	if time_to_press >= time_to_leave {
+		audio_stop_sound(sd_arena)
+		audio_play_sound(sd_main_menu,1,1)
+		time_to_press = 0
 		room_transition(r_map)
 	}
 	
