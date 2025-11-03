@@ -70,7 +70,7 @@ global.guns = [
 	),
 	new Gun("Shotgun",
 		s_shotgun,s_shotgun_icon,
-		4,50,6,
+		10,50,6,
 		sc_player_shotgun_shoot,sc_enemy_shotgun_shoot,
 		16, [10,20,1]
 	),
@@ -82,3 +82,12 @@ for (var i = 0; i < array_length(global.guns); i++) {
 global.pause = false
 time_to_press = 0
 time_to_leave = 120
+
+global.time = {
+	hours: 0,	
+	minutes: 0,	
+	seconds: 0,	
+}
+
+global.max_lvl = 0
+sc_load()

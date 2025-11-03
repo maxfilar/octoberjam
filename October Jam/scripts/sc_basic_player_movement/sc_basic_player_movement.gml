@@ -19,10 +19,4 @@ function sc_basic_player_movement(){
 
 	x += xspd
 	y += yspd
-	
-	if xspd == 0 && yspd == 0 {
-		sprite_index = s_player_walk
-	} else {
-		sprite_index = s_player
-	}
 }

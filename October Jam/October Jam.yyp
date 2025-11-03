@@ -93,6 +93,7 @@
     {"id":{"name":"sc_player_double_pistol_shoot","path":"scripts/sc_player_double_pistol_shoot/sc_player_double_pistol_shoot.yy",},},
     {"id":{"name":"sc_player_pistol_shoot","path":"scripts/sc_player_pistol_shoot/sc_player_pistol_shoot.yy",},},
     {"id":{"name":"sc_player_shotgun_shoot","path":"scripts/sc_player_shotgun_shoot/sc_player_shotgun_shoot.yy",},},
+    {"id":{"name":"sc_saveload","path":"scripts/sc_saveload/sc_saveload.yy",},},
     {"id":{"name":"sc_screen_shake","path":"scripts/sc_screen_shake/sc_screen_shake.yy",},},
     {"id":{"name":"struct_copy","path":"scripts/struct_copy/struct_copy.yy",},},
     {"id":{"name":"sd_arena","path":"sounds/sd_arena/sd_arena.yy",},},

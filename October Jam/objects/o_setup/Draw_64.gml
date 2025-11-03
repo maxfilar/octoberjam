@@ -1,6 +1,6 @@
 if !instance_exists(o_transition) {
-	var _w = window_get_width()
-	var _h = window_get_height()
+	var _w = camera_get_view_width(view_camera[0])
+	var _h = camera_get_view_height(view_camera[0])
 	if global.pause and  !instance_exists(o_buff) {
 		draw_sprite(s_pause,0,_w/2, _h / 2)
 	}

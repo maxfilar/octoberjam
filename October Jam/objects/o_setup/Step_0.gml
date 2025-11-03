@@ -15,6 +15,7 @@ if (room == r_arena) {
 		audio_stop_sound(sd_arena)
 		audio_play_sound(sd_main_menu,1,1)
 		time_to_press = 0
+		sc_save()
 		room_transition(r_map)
 	}
 	
